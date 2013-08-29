@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+
+  "name": "Korespondent Video Ad Removal",
+  "description": "This extension removes the annoying Korrespondent ad",
+  "version": "0.1",
+
+  "content_scripts": [
+    { "matches" : ["*://*.korrespondent.net/*", "*://*.korespondent.net/*"],
+      "js": ["korrespondent.js"] }
+  ]
+}
